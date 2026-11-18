@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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" />
+<link rel="apple-touch-icon" href="data:image/png;base64,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" />
+<title>MASTER CREATION — Creative Design Company</title>
+<meta name="description" content="A creative design company delivering branding, motion, 3D, UI/UX, AI-assisted creativity and video for ambitious businesses." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Manrope', 'Inter', 'sans-serif']
+      },
+      colors: {
+        brand: {
+          primary: '#0789E8',
+          electric: '#168FF0',
+          sky: '#38BDF8',
+          soft: '#D9F0FF',
+          surface: '#F5FAFF',
+          ink: '#202B38',
+          muted: '#667583',
+          border: '#E5EEF7'
+        }
+      }
+    }
+  }
+};
+</script>
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    background: #ffffff;
+    color: #202B38;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid #0789E8;
+    outline-offset: 3px;
+    border-radius: 12px;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+  }
+  .btn-p {
+    background: linear-gradient(135deg, #38BDF8, #168FF0 50%, #0789E8);
+    color: #fff;
+    box-shadow: 0 10px 28px -4px rgba(7, 137, 232, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  }
+  .btn-p:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 34px -4px rgba(7, 137, 232, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.65);
+  }
+  .btn-p:active {
+    transform: scale(0.98);
+  }
+  .btn-g {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+    border: 1px solid #E5EEF7;
+    color: #202B38;
+    box-shadow: 0 6px 20px -4px rgba(32, 43, 56, 0.05);
+  }
+  .btn-g:hover {
+    background: #fff;
+    border-color: #BAE3FF;
+    transform: translateY(-2px);
+  }
+
+  /* Glassmorphism & Surfaces */
+  .glass {
+    background: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(229, 238, 247, 0.95);
+    box-shadow: 0 12px 36px -10px rgba(7, 137, 232, 0.1), inset 0 1px 0 #fff;
+  }
+  .lift {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s, border-color 0.35s;
+  }
+  .lift:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.55);
+    box-shadow: 0 24px 48px -12px rgba(7, 137, 232, 0.18);
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.95rem;
+    border-radius: 9999px;
+    background: #fff;
+    border: 1px solid #E5EEF7;
+    color: #0789E8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(7, 137, 232, 0.04);
+  }
+
+  /* Hero Caustic Aura & Studio Orb */
+  .aura {
+    background: radial-gradient(ellipse 62% 52% at 50% 58%, rgba(56, 189, 248, 0.28), rgba(147, 217, 255, 0.34) 36%, rgba(217, 240, 255, 0.22) 64%, transparent 86%);
+  }
+  .orb {
+    background:
+      radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.12) 24%, transparent 45%),
+      radial-gradient(circle at 72% 75%, rgba(56, 189, 248, 0.88), rgba(7, 137, 232, 0.68) 45%, transparent 75%),
+      linear-gradient(135deg, #E0F4FF, #7DD3FC 35%, #38BDF8 65%, #818CF8);
+    box-shadow: 0 20px 50px rgba(7, 137, 232, 0.38), inset -12px -12px 28px rgba(7, 137, 232, 0.35), inset 10px 10px 24px rgba(255, 255, 255, 0.92);
+    transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .orb.wireframe {
+    background:
+      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.28) 0px, rgba(255, 255, 255, 0.28) 1px, transparent 1px, transparent 10px),
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0px, rgba(255, 255, 255, 0.28) 1px, transparent 1px, transparent 10px),
+      radial-gradient(circle at center, rgba(7, 137, 232, 0.25), rgba(255, 255, 255, 0.08));
+    border: 1.5px dashed rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 32px rgba(255, 255, 255, 0.35), inset 0 0 20px rgba(255, 255, 255, 0.25);
+  }
+
+  /* Animations */
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+  }
+  @keyframes pulse2 {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.045) rotate(6deg); }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .bob { animation: bob 6s ease-in-out infinite; }
+  .bob2 { animation: bob 7.2s ease-in-out 1.4s infinite; }
+  .pulse2 { animation: pulse2 9s ease-in-out infinite; }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 32s linear infinite;
+  }
+  .marquee-wrap:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+  .noscroll::-webkit-scrollbar { display: none; }
+  .noscroll { scrollbar-width: none; }
+
+  .pill-select[aria-pressed="true"] {
+    background: #0789E8;
+    color: #fff;
+    border-color: #0789E8;
+    box-shadow: 0 6px 16px -3px rgba(7, 137, 232, 0.38);
+  }
+  .filter[aria-pressed="true"] {
+    background: #0789E8;
+    color: #fff;
+    border-color: #0789E8;
+    box-shadow: 0 6px 18px -3px rgba(7, 137, 232, 0.4);
+  }
+
+  .swiss-grid {
+    background-image: linear-gradient(to right, rgba(7, 137, 232, 0.04) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(7, 137, 232, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS BAR -->
+<div class="fixed top-0 left-0 right-0 h-[3px] z-50 bg-transparent pointer-events-none">
+  <div id="scroll-progress" class="h-full w-0 bg-gradient-to-r from-brand-sky via-brand-electric to-brand-primary transition-[width] duration-75"></div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur-xl border-b border-transparent transition-all">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3 group" aria-label="MASTER CREATION home">
+      <img src="data:image/png;base64,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" alt="MASTER CREATION logo" width="36" height="36" class="w-9 h-9 rounded-xl object-cover shadow-[0_6px_18px_-3px_rgba(7,137,232,.45)] group-hover:scale-105 transition-transform" />
+      <span class="font-display font-bold tracking-[0.06em] text-[15px] sm:text-base text-brand-ink">MASTER CREATION</span>
+    </a>
+
+    <nav id="nav-desktop" class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-brand-muted" aria-label="Main"></nav>
+
+    <div class="flex items-center gap-3">
+      <button type="button" id="nav-login-btn" class="btn btn-g px-4 py-2 text-[13.5px]">Login</button>
+      <button type="button" id="nav-reg-btn" class="btn btn-p px-4 py-2 text-[13.5px]">Register</button>
+      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-10 h-10 rounded-full border border-brand-border bg-white/90 flex items-center justify-center text-brand-ink">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="menu-path" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <nav id="nav-mobile" class="hidden lg:hidden bg-white/95 backdrop-blur-2xl border-b border-brand-border px-6 py-5 shadow-lg flex-col gap-3 text-[15px] font-medium" aria-label="Mobile"></nav>
+</header>
+
+<main>
+<!-- HERO SECTION -->
+<section id="home" class="relative pt-32 pb-16 lg:pt-36 lg:pb-24 overflow-hidden swiss-grid">
+  <canvas id="hero-canvas" class="pointer-events-none absolute inset-0 w-full h-full -z-10" aria-hidden="true"></canvas>
+  <div class="aura pointer-events-none absolute inset-x-0 top-20 h-[780px] -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+    <div class="inline-flex items-center gap-2.5 p-1.5 pr-4 rounded-full bg-white/90 border border-brand-border shadow-[0_4px_16px_rgba(7,137,232,.06)] mb-8 reveal">
+      <span class="px-2.5 py-0.5 rounded-full bg-[#E8F6FF] text-brand-primary text-xs font-semibold flex items-center gap-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse"></span> Studio
+      </span>
+      <span class="text-xs sm:text-[13px] font-medium text-[#52606D]">Creative design & spatial visualization company</span>
+    </div>
+
+    <h1 class="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-[1.11] tracking-[-0.03em] max-w-4xl mx-auto reveal">
+      Transforming ideas into
+      <span class="bg-gradient-to-r from-brand-electric via-brand-primary to-brand-sky bg-clip-text text-transparent">visual masterpieces</span>
+    </h1>
+
+    <p class="mt-6 text-base sm:text-lg text-brand-muted max-w-2xl mx-auto leading-relaxed reveal">
+      We help ambitious businesses grow through branding, digital experiences, graphic design, motion graphics, 3D visualization, UI/UX design and AI-powered creativity.
+    </p>
+
+    <div class="mt-9 flex flex-wrap items-center justify-center gap-4 reveal">
+      <a href="#portfolio" class="btn btn-p px-7 py-3.5 text-[15px]">Explore our work →</a>
+      <a href="#contact" class="btn btn-g px-7 py-3.5 text-[15px]">Start a project brief →</a>
+    </div>
+
+    <!-- Interactive MC Studio Spatial Console -->
+    <div class="mt-16 lg:mt-20 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-4 reveal">
+      <div class="lg:col-span-4 flex justify-center lg:justify-end order-2 lg:order-1">
+        <div class="glass rounded-[28px] p-3.5 flex gap-3 bob max-w-sm w-full">
+          <div class="flex-1 bg-white/85 rounded-[20px] p-4 border border-brand-border text-left transition-all">
+            <p id="stat1-label" class="text-[11px] font-medium text-brand-muted">3D resolution</p>
+            <p class="font-display font-bold text-xl mt-1 text-brand-ink">
+              <span id="stat1-val">8K</span> <span id="stat1-unit" class="text-[10px] font-semibold text-brand-primary">RAW</span>
+            </p>
+            <p id="stat1-sub" class="mt-2 text-[10.5px] text-brand-muted">Raytraced caustics</p>
+          </div>
+          <div class="flex-1 bg-white/85 rounded-[20px] p-4 border border-brand-border text-left transition-all">
+            <p id="stat2-label" class="text-[11px] font-medium text-brand-muted">Motion engine</p>
+            <p class="font-display font-bold text-xl mt-1 text-brand-ink">
+              <span id="stat2-val">120</span> <span id="stat2-unit" class="text-[10px] font-semibold text-brand-primary">FPS</span>
+            </p>
+            <p id="stat2-sub" class="mt-2 text-[10.5px] text-brand-muted">Fluid bezier curve</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 flex justify-center order-1 lg:order-2">
+        <div class="w-full max-w-[350px] rounded-[40px] p-2.5 bg-gradient-to-b from-white/95 to-[#E5F4FF]/90 border border-white shadow-[0_28px_70px_-12px_rgba(7,137,232,.32)]">
+          <div id="screen" class="rounded-[32px] overflow-hidden p-5 text-white transition-all duration-500" style="background:linear-gradient(#168FF0,#45B6FE 55%,#D9F0FF)">
+            <div class="flex items-center justify-between text-[11px] font-medium text-white/95 mb-4">
+              <span class="inline-flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>MC Studio v4.2
+              </span>
+              <button type="button" id="wireframe-toggle" class="px-2.5 py-0.5 rounded-full bg-white/20 hover:bg-white/35 text-[10px] font-semibold backdrop-blur-md border border-white/30 transition-colors">
+                Mesh: Solid
+              </button>
+            </div>
+
+            <div id="modes" class="flex flex-wrap justify-center gap-1.5 mb-5" role="tablist" aria-label="Studio modes"></div>
+
+            <div class="relative h-48 flex items-center justify-center">
+              <div id="ring1" class="absolute w-44 h-44 rounded-full border border-white/40 transition-transform duration-700" style="transform:rotate(12deg)"></div>
+              <div id="ring2" class="absolute w-36 h-36 rounded-full border border-dashed border-white/60 transition-transform duration-700" style="transform:rotate(-45deg)"></div>
+              <button type="button" id="orb-btn" aria-label="Toggle wireframe preview" class="orb w-28 h-28 rounded-full pulse2 flex items-center justify-center cursor-pointer focus:outline-none">
+                <div class="w-12 h-12 rounded-full bg-white/35 backdrop-blur-md border border-white/60 flex items-center justify-center">
+                  <span id="orb-icon" class="text-brand-primary font-display font-extrabold text-sm">3D</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="mt-3 rounded-2xl bg-white/85 backdrop-blur-md p-3.5 text-left border border-white/90 flex items-center justify-between gap-2">
+              <div>
+                <p id="mode-title" class="text-xs font-bold text-brand-ink"></p>
+                <p id="mode-desc" class="text-[11px] text-[#52606D] mt-0.5"></p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-brand-primary text-white text-[10px] font-semibold shrink-0">Live</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 flex justify-center lg:justify-start order-3">
+        <div class="glass rounded-full p-2.5 pl-4 flex items-center justify-between gap-4 bob2 max-w-sm w-full">
+          <div class="flex items-center gap-3 text-left">
+            <span class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-soft to-white border border-[#BAE3FF] flex items-center justify-center text-brand-primary shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </span>
+            <div>
+              <h3 class="font-display font-bold text-[14px] leading-tight text-brand-ink">Free discovery call</h3>
+              <p class="text-[11.5px] text-brand-muted">Avg. response under 12 hrs</p>
+            </div>
+          </div>
+          <a href="#contact" aria-label="Book a free discovery call" class="w-11 h-11 rounded-full bg-brand-ink hover:bg-brand-primary text-white flex items-center justify-center transition-colors shrink-0">→</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED PARTNERS MARQUEE -->
+<section aria-label="Trusted partners" class="py-10 border-y border-brand-border/80 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 mb-5 text-center">
+    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-brand-muted">Trusted by forward-thinking teams & product innovators</p>
+  </div>
+  <div class="marquee-wrap relative w-full overflow-hidden">
+    <div class="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+    <div class="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+    <div id="partner-marquee" class="marquee-track flex items-center gap-12 sm:gap-16 px-8"></div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-24 lg:py-32 bg-brand-surface/65 border-b border-brand-border/70">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="tag">✦ Our expertise</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-[42px] tracking-[-0.025em]">Multidisciplinary creative services</h2>
+      <p class="mt-4 text-brand-muted leading-relaxed">Visual identity, spatial 3D, fluid motion, UI/UX systems and generative workflows—all under one unified roof.</p>
+    </div>
+    <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7"></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14 reveal">
+      <div>
+        <span class="tag">✦ Selected works</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-[42px] tracking-[-0.025em]">Featured portfolio</h2>
+        <p class="mt-2 text-sm text-brand-muted">Click any case study to inspect wireframe vs. final render & project outcomes.</p>
+      </div>
+      <div id="filters" class="flex gap-2 overflow-x-auto noscroll pb-1" role="group" aria-label="Filter projects"></div>
+    </div>
+
+    <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+    <div class="mt-16 text-center">
+      <a href="#contact" class="btn btn-p px-8 py-4 text-[15px]">Start your project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-24 lg:py-32 bg-brand-surface/50 border-y border-brand-border/70 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-16">
+    <div class="lg:col-span-6 reveal">
+      <span class="tag">✦ About the company</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-[46px] leading-[1.15] tracking-[-0.025em]">Where creativity meets technology</h2>
+      <p class="mt-6 text-[17px] text-[#52606D] leading-relaxed">
+        <strong>MASTER CREATION</strong> is a multidisciplinary creative design company that helps businesses turn ambitious ideas into clear, memorable digital experiences.
+      </p>
+      <p class="mt-4 text-brand-muted leading-relaxed">
+        We pair disciplined Swiss-style design clarity with fluid motion, photorealistic 3D and AI-accelerated workflows—so forward-thinking brands stand apart with unmistakable craft.
+      </p>
+
+      <div id="stats-row" class="mt-9 grid grid-cols-3 gap-4 pt-8 border-t border-brand-border">
+        <div>
+          <div class="font-display font-bold text-2xl sm:text-3xl text-brand-ink">
+            <span class="counter" data-target="140" data-suffix="+">0</span>
+          </div>
+          <div class="text-xs sm:text-sm text-brand-muted mt-1">Visual projects</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-2xl sm:text-3xl text-brand-ink">
+            <span class="counter" data-target="6" data-suffix="">0</span>
+          </div>
+          <div class="text-xs sm:text-sm text-brand-muted mt-1">Core disciplines</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-2xl sm:text-3xl text-brand-ink">
+            <span class="counter" data-target="99" data-suffix="%">0</span>
+          </div>
+          <div class="text-xs sm:text-sm text-brand-muted mt-1">Client satisfaction</div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-p mt-9 px-7 py-3.5 text-[15px]">Work with our team →</a>
+    </div>
+
+    <div class="lg:col-span-6 relative reveal">
+      <div class="absolute inset-0 -z-10 rounded-full blur-2xl" style="background:radial-gradient(circle,rgba(56,189,248,.25),rgba(217,240,255,.4),transparent 70%)"></div>
+      <div class="glass rounded-[36px] p-8 sm:p-10">
+        <div class="h-72 sm:h-80 flex items-center justify-center">
+          <div class="w-64 h-64 rounded-full border border-[#BAE3FF] flex items-center justify-center relative">
+            <div class="w-48 h-48 rounded-full bg-gradient-to-tr from-brand-soft via-white to-[#BAE3FF] flex items-center justify-center">
+              <div class="w-28 h-28 rounded-[28px] rotate-12 bg-gradient-to-br from-brand-sky to-brand-primary shadow-[0_20px_40px_rgba(7,137,232,.38)] flex items-center justify-center text-white">
+                <span class="font-display font-extrabold text-2xl -rotate-12">MC</span>
+              </div>
+            </div>
+            <div class="absolute -top-3 left-2 glass px-4 py-2 rounded-full text-xs font-semibold bob flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-brand-primary"></span> Spatial 3D & motion
+            </div>
+            <div class="absolute -bottom-3 right-0 glass px-4 py-2 rounded-full text-xs font-semibold bob2 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-brand-sky"></span> Human + AI direction
+            </div>
+          </div>
+        </div>
+        <p class="mt-4 rounded-2xl bg-white/90 border border-brand-border p-4 text-center text-[13px] font-medium text-[#52606D]">
+          “Design is clarity, emotion and engineering working in harmony.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS TIMELINE SECTION -->
+<section class="py-24 bg-white border-b border-brand-border">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="tag">✦ How we work</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em]">Our creative process</h2>
+      <p class="mt-3 text-brand-muted">A milestone-driven workflow that turns raw vision into polished visual reality.</p>
+    </div>
+
+    <div class="relative">
+      <div class="hidden lg:block absolute top-12 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-brand-soft via-brand-sky to-brand-primary opacity-45 -z-0" aria-hidden="true"></div>
+      <ol id="process-grid" class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-brand-surface/65 border-b border-brand-border">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="tag">✦ Client stories</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em]">Loved by founders & creative leads</h2>
+      <p class="mt-3 text-brand-muted">Real feedback from product teams we’ve partnered with across branding, 3D and UI/UX.</p>
+    </div>
+    <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7"></div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="py-24 bg-white border-b border-brand-border">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+    <div class="text-center mb-14 reveal">
+      <span class="tag">✦ Common questions</span>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em]">Frequently asked questions</h2>
+      <p class="mt-3 text-brand-muted">Everything you need to know about our workflow, timelines and deliverables.</p>
+    </div>
+    <div id="faq-list" class="space-y-3.5 reveal"></div>
+  </div>
+</section>
+
+<!-- CONTACT & INTERACTIVE BRIEF BUILDER -->
+<section id="contact" class="relative py-24 lg:py-32 overflow-hidden">
+  <div class="aura pointer-events-none absolute inset-x-0 bottom-0 h-[660px] -z-10"></div>
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="glass rounded-[36px] p-8 sm:p-12 lg:p-14 reveal">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E8F6FF] border border-[#BAE3FF] text-brand-primary text-xs font-semibold mb-4">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Accepting new projects • Avg reply &lt; 12h
+        </div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-[42px] leading-[1.16] tracking-[-0.025em]">Have an idea? Let’s create something extraordinary</h2>
+        <p class="mt-3.5 text-brand-muted">Configure your project scope below—we’ll respond with a tailored roadmap and estimate.</p>
+      </div>
+
+      <form id="contact-form" class="space-y-6 max-w-3xl mx-auto" novalidate>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label for="cn" class="block text-xs font-semibold mb-2 ml-1 text-brand-ink">Your name *</label>
+            <input id="cn" required placeholder="Alex Rivera" class="w-full px-4 py-3.5 rounded-2xl bg-white/95 border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+          </div>
+          <div>
+            <label for="ce" class="block text-xs font-semibold mb-2 ml-1 text-brand-ink">Work email *</label>
+            <input id="ce" type="email" required placeholder="alex@company.com" class="w-full px-4 py-3.5 rounded-2xl bg-white/95 border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+          </div>
+        </div>
+
+        <div>
+          <span class="block text-xs font-semibold mb-2.5 ml-1 text-brand-ink">1. Interested services</span>
+          <div id="chips" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <span class="block text-xs font-semibold mb-2.5 ml-1 text-brand-ink">2. Estimated budget</span>
+            <div id="budget-chips" class="flex flex-wrap gap-2"></div>
+          </div>
+          <div>
+            <span class="block text-xs font-semibold mb-2.5 ml-1 text-brand-ink">3. Target timeline</span>
+            <div id="timeline-chips" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <div>
+          <label for="cm" class="block text-xs font-semibold mb-2 ml-1 text-brand-ink">4. Project details *</label>
+          <textarea id="cm" rows="4" required placeholder="Share a short overview of your product, goals, or visual references…" class="w-full px-4 py-3.5 rounded-2xl bg-white/95 border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15 resize-none"></textarea>
+        </div>
+
+        <p id="form-error" class="hidden text-sm text-red-600 text-center font-medium" role="alert"></p>
+
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-2.5">
+            <a href="https://www.behance.net" target="_blank" rel="noopener" aria-label="Behance" class="w-10 h-10 rounded-full bg-white border border-brand-border flex items-center justify-center text-xs font-bold text-[#52606D] hover:text-brand-primary hover:border-brand-sky transition-colors">Bē</a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble" class="w-10 h-10 rounded-full bg-white border border-brand-border flex items-center justify-center text-xs font-bold text-[#52606D] hover:text-brand-primary hover:border-brand-sky transition-colors">Dr</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white border border-brand-border flex items-center justify-center text-xs font-bold text-[#52606D] hover:text-brand-primary hover:border-brand-sky transition-colors">IG</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white border border-brand-border flex items-center justify-center text-xs font-bold text-[#52606D] hover:text-brand-primary hover:border-brand-sky transition-colors">in</a>
+          </div>
+          <button type="submit" class="btn btn-p w-full sm:w-auto px-8 py-4 text-[15px]">Send project brief →</button>
+        </div>
+
+        <div id="form-ok" class="hidden rounded-2xl bg-[#E8F6FF] border border-[#BAE3FF] p-4 text-center text-sm text-brand-primary font-medium" role="status">
+          ✦ Thanks! Your structured brief reached <strong>MASTER CREATION</strong>. We’ll reply within 12 hours.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-brand-border py-14">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-10 border-b border-brand-border">
+      <div>
+        <a href="#home" class="inline-flex items-center gap-3 font-display font-bold tracking-[0.06em] text-base text-brand-ink"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAIAAABoJHXvAAAQlUlEQVR42u2dbawdx1nHn//Mnpf7fq9vrhPbhNb29cu9sZMqqLSqAOGikiiEhqZNidukb0mq9hNSlE8ValVVFRUC8QUQKkiARIGKD5AWUqTykoLSEDU1jQMxaZW6ThyD4/jlvr+dfR4+zO6e3XN2z5m9Pufs3HhPLOccz+7s7Pz2+c8zM8/MYuST/wEAIAAKBDLfSYX/GHyn6DshnhQeH5zeLSsAiiiRczOrZM7Rd6LWnBFelJCeRG3lDwuZmZTMqnmn1HrR4BRC262lJsVOp8RFt/fxRIhIiEAkQiAICYiIiRQFSUyiABLznVR4PBEYosRcXJgQJTFBNbMSFR5PJAwoieXczIqUmFIlkwAWSuQcfCcyhWpPArHEcg6ySrtolARhQeLWzJ0CJImLBjUDIUHy1sI7TSTFaqZZh2Ie9G18tL7j0fBE83+TUfg9lhReIUoOf5r/wiORnlV0DCiWV5hbelbNJLReNPa97aKxqyUu2swFLUlZ5Y/uPP0qSC9Pp5wTdbgdZlrf8UgLmOtj1laz/WaGjkmp1ZfFDHE++ZglnwwKdLkPzLS+/dF2MDvPznrFjHrHrD92ptUdj6SCKbWxN3bWa2Yatz+SBeYtrI1dmDmsjRrHP9UBTKmNrmmjpuOPdAazA7Wxd8x65Tf2Ths1jn2qK5hSG93RRo3jn7QBs8OYvXW1UePYJ+JHl+2Z49qocewTlDz6xrSznaKNGrd9PFn/pTY6rY0axz7eei+lNjqsjRq3faxdGG5kZgPVxvzMNOYfTi1wqY2D0Mb8zDRue5gyHrJSGx3URo35h9pr1QVmLRVdaqNhpjH/UIb/UmrjYLXRztfXmPtots9ZauMAtdHO19eY/2j2qGmpjc5po8bcyY4j3aU2uqWNGnMn02y61EZHtVHj6EmLGaVSG13RRo2jD9rNApba6IQ2hsAymZXa6JY2ahz59eSt3cDa2Ku4K/Qx7krj6Iep9dZuVG3cCTGpGkc+3GbNpTa6q40aRx5Iu0qpje5pI4zTcfiBjCej1EbHtJFAII0jH2rNqtRGh2MLNA5/MCWrUhtdjdfXOPTBtkuX2uiuNmocvj9N5UptdEsboySNQ/dn1P6O1Ma3/FomjUMfyLaYUhud00aN2Q90VLlSG93SRo1D93WMTC210S1t1Ji9r1s0camNDmmjxsH7iKhHzEpt7Ls2asy+P/UuSm10UhtJ4+D7U4taaqOb2qhx8FeTD41b2mg2aqLWeMre2xkISOwn5Kg2ahy4t83QnWCmFYhoY0saLJ6CAliSN907ZlqBmda3pOGTVqQVRBzVRo2D96YVoFBtFGiF5XX2WW69qTY1oq+sNFY3Zbgabh7WO20EoBUtrvFQVR2+pT4z7i2u+UvrUq9YMxusNnpmD7fkVmwmqXUTNqL4z+QBRCmZgEmQPCs4QFp3fDMJZI7TihZXG+85PPalB2698+0jSuG/Xlv98pMXvvXCtZlxD4B02ldOiMhyXzkoMMu1Vb73HeOfee9Nb5uuEtGrlzf/+DtX/uWl5bEhJWK5r1x2Uta+cm2bwVnuK6dx4FeyDb0AbVQKaxt85/6Rb39ufvbmetVTFY19u6oPvnuaWZ4+s+Qz1StKwh3vtjcXo0CeUssbPoDH7979+N27J4e1efAmh/V750bPXFh/5dJmreKcNmrsvyelNovTRgWsb/hffWx2ft/QZoOVAhExC4AT8+M/e2Dk+bMrZ99cr1VURUMotnOinTYC5GlsNmRh1X/H24Z/58F97zs2zkJittEkarAoYN9U5e9/sOgp5/xGjf33pNdmEXYGUINlbEh/8UO3jtW1UmZn02ALT59l9ub6R94z7Sn1g3Orby41Kh6qHgCEbVumnZlMFLDhy+Kav3u88ht37f7Cr+25ZaLis2gVd0IAUNXDU6eX1reCJ8Ydv9EjymxpetqetZ+V0p6JgEW0QlCDMQ7Gl/NZxur6C/fve/jnbvqjf774t89f/d9rW1UPwzVd9RDfdTbaqVUBRLTly9I6E9H+mdr975w6+e6p6VGPiFhIq5TtFQACCQuZZozC9tWqPWtvRDPaM5iWu0N71laPkdMhYUX3lVn6VSJmRCJCLNLKKsbMHHBgd+23T/704/fs+eapq0+9cO3F19auLDd8IQ1oTRoGU3CdWkXdPFH5xbnhu2+f+KX5sdG6JiJjWCp7zxlDSwQS2ybXihmC07sya3pbWcxARMIChEkekTQP6DuzLn6jEEREhDp8ANKAqc1bJiqPndj92IndF65uvnh+7czra69e3ry83NjYYgCjdTUzXtk/U5vfOzS3r75rxDM5+CwK0KrLPlymJIGjmJeZtd8YbLXczW8kgSQtbGDMOmmjEIV11OWjQITA2hSwd6q6d6p61/GJDqcYxjaoKCTDQiwE2i4za23s7uuHp0cW5gYzkAixkOXHWBuROStobZr+g5BQ8I/KDHHZ7/wpwaMjRCQpW4j3Vhu7t2ehNnppqlUks6COc34icsl/jTu7uT8cSCJJYq/2grXRI5Gk4RbKjIw2CjnwkdDpaBki6R8zG20MJbEwZkm/0RwqTiATESZiQ6z1nQh9ZNZZG2NORzHMkn5j0CksHpckLSztPRbFaGPS6ShcG6Pm3gVJpMCtl8x3jxSgjXG3norXxujZdqsN6/C+mEFro9c251CoNpo5FjtJ9FnM2EcuoWMWMydgAyw2NFUAs1RtNBbmCLPQ3RC2qf0IVYMletMTUg2Fgs64GaXM5dYzEYpjlqaNQZvBJFEnyPQ+OPHTHJA4JnlASiZtecYPSM2E4n86ihXRX373ze++vEREnoIOx/VFyGcxf5hFglHgANX6Fv/j6YWv/uslGz80lMSwJZPAb4x+ciyJKey0tSQ1xyRJROLfM5MomXOQFFRQ29BUwXbGwWhHt2dfA3/6nTf+6fkr7zo2cWJu4uePjt/2U0N7JqtVDy096JUNPn9l88XXVp/54dJzr6x8/+zKXbdPfPrEDEuXcQ9J6zgXpY3RjLyX7AkVzcw82HZt2MSwBw/fe2X5uTOLX/HUrjFv71R1z2R1etQbqiohWt3gy8uNiwtbl5YaS+s+CKN1PVpXY0PaeiwxpeNcbHsWdZzdYBaJkcWn4bMwjdaU1DQRrW3yyxfWXjq/xuGIolbkaVS1qlUwOewpkALWt8T3xdZLDDrOCHuIMSkoqD3zEk934cxMse07ziINJmYGoBTVKsrMfCo0d7cAQYQaPgPwlGk2crr1YQwPJftAhTDzgpbfEWbR0JRdhVLYMhMJM8xsGgBAYi9OFfOm1OZ8W77BX5HtvM+zX8zawtyKZRbosyWwoDqFUmLlUsPoYnOSNuYVmWNrrFyB2hgfmnKAGTiYq7OWROP1psY3tjMzE5Jim7fE58PizArUxpahKQeY2Q9NiURmlhWT2sIs6lrZj/9GM87bfddxj5m1D025oI2Wnn1iVtiGWdRft1Rc49YLUVYccb+0MRnXHGcWTmCSM8zIfvA3Gj1B59jvWBgd2TsdiSCcDGb90kYIUXpSzOlwgVnkdIilJHJAt1u8vvkZ8yNsvMTmaL19vH6/tTHpdBTOLI9bnxiEtFhjYYJYcrRh4VAe0mI6B6WNrQ9Km9NRLDPiHB1nic122q2LCeYk7ediqCWQlAauja1xVy1hbkUzyzM0FbMw27VMJhTc2gltDyQtXhu9HAFoA2BGYW62wJptmA2zwKG0HkkJzLEt+LdAbUwOTRXODHm8xMBDN7VkxYyFKEfH2UxTNaP0uWhtFKGMFZiFMZNkP0w6RoKGE6Eilus8g662zdAUNScVE/dcqDZy2A8jV5gZpyOfhcUcy27MJE9kcXP1Svra3EK0sXU+rGhm+ZwOCtqwjldpWX9GkselSes4F6uN8UBSB5hFzrp1tGfM6ei+Bl6i0IicYW49WQPfE2bJscTCmZEiImY2IWzSZS1Di1tvt2ZQrIgJk4nhYREA1MXOZJDM7IKZhNNDplIjorYbdyUiAK1vbC2sbHaPT5R8V5Gw2yxdu+NEi+v+8gYjtpApHPggSQ+WaguBCpO4p3FXKkcA2iCYsVYkq5s/urBkCtp9LIJSr8JZzLqO/prks5c2FlYbSgUdbQtm0hLF1idmKl/QYP+ZgYR8fvr0/8HO9c4uaupVmJqeunSwsGdeXtrYYmqp2e521ndmKnegZ5+ZMTPV9N89++rGlq8VpKvTkWWsHbSxc0Ax0GD5xqkr9YrymVnyMuuvNqr0+yyOGTN7NXXulctf/7efANQpJE0k8cdKG2MzMqmhcywA/cN/Xj3145XhmvL9yGjsmfVXG1VmbRbHTFhQ1Z//s1PLa1sKZheIjl5ivqJmTjmbDs76Fn/+b17zPOMlxuOondBG1ak2C2LGzLquz5298tnff1YpMGepWFsOlu1ZGjARarBohSe+du702ZXhmm5wvKLFEW1UXWqzIGZ+w/cmqn/x5Jnf/PNTnlbR4qIMt75rUZPa2MbfZxGiisZXvvH6Hzx1YXTU22pwW0U7oY0WKzAL6lP7DfbGq1/+k+9dXdz4vc++q+opFmEmpWIV3uw42xU1NncTbsMhZm2Lz/TE137yu0+eHxr1fBZ0jG9slnvgfWq7FZhFMWP2xqp/+PXTz51547cefef77tyrNBERdBDi1jY0ZbP+LGi+NcwGLSCip19a+NxfnXv2vxdqYxWfCdQMFu4Fs8zxxm0ws16BWQgzUr7P3kT1+2fe+OUnvnXiZ/adPHHgF47ffOvMyHDdU4pC6bMuKgmJKAhAa5ty/vLav//P4l8/c+nbL1wjoYqxLbSszrh+Zr0cbwSOPmQ2pzN7Ijf/hkr8jB8QfGk5AATV+jNxvPVV2jJRWgmBVxvE4o3V982MzEwM/fjiytXFTXhaCJZFBSCMidHK7J6RN5car1/Z3FpukFZquAKAJdgMLgzKD78jXN6ZnaTCDWnN+sHoeIBUcHx0SntWpGLHG+NO5NzMijRuOp6xKSLlfxFc1qaIaZl02HqRWvdvNLLnVbWqVxosCwsbFy6urDUYGiR59m8kIkXrG3zh4tq1lQYDXl2rqmIOVxM7v1e7xvTx1KQBMrPdwVSIhEWBlKdURWN7e24SKUW6qsxKTSZqboi4E96JoDF9rOPmo24xIzTnwba/T2pir50d9u4RjeljyYpzWhu7FfWt/x4LjV3zFhXhop31jtlOsjON6Xm7iiiZOcHMWBiVzApillsbNXbN5amIklnBdqYxNZezIkpmRTLTmDqSXsQbl5nTfqMBRiUzx9uz2PvDJo9styJKZgVoo8bU4S5FLLXRJW3UmDx8fRVR2tlAmWlMHrruiiiZDU4bNSZme1ERpTYOiJnG5GyPKqK0s0Foo8bEwXyPVcmsUDvTGD+YWwpKbSyOmcbEge0UsWRWkDZqjO9vz7lk5qw2aowfMCv9SmY7QhsNMCqZ7RRmEbCS2c7QxjiwktkOsLMWYCUz15m1AyuZOa2NqcBKZu7aWRawkpmjzDoAK5m5qI2dgZXMnLOzrsBKZm4xswFWMnNIGy2BlcxcsTN7YCUzJ5jlAlYyK14b8wIrmRVsZ9sAVjIrktn2gJXMitLG7QMrmRVjZ9cDrGRWALPrBFYyG7Q2Xj+wktlAmfUEWMlscNrYK2A2zGjnrD/bRlEHZGc9BEZtt5SnItA7ZiCLfXV2qjb+P891NFyZZca5AAAAAElFTkSuQmCC" alt="MASTER CREATION logo" width="32" height="32" class="w-8 h-8 rounded-lg object-cover" />MASTER CREATION</a>
+        <p class="mt-2 text-sm text-brand-muted">“Turning imagination into visual reality.”</p>
+      </div>
+      <nav id="nav-footer" class="flex flex-wrap gap-6 text-sm font-medium text-brand-muted" aria-label="Footer"></nav>
+    </div>
+
+    <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm border-b border-brand-border">
+      <div>
+        <p class="font-semibold text-brand-ink">Direct Email</p>
+        <div class="mt-1 flex items-center gap-2">
+          <a href="mailto:hello@mastercreation.studio" class="text-brand-muted hover:text-brand-primary transition-colors">hello@mastercreation.studio</a>
+          <button type="button" id="copy-email" class="px-2.5 py-0.5 rounded-full bg-brand-surface hover:bg-brand-soft border border-brand-border text-[11px] font-semibold text-brand-primary transition-colors" title="Copy email address">Copy</button>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold text-brand-ink">Studio Line</p>
+        <a href="tel:+14158904321" class="mt-1 inline-block text-brand-muted hover:text-brand-primary transition-colors">+1 (415) 890-4321</a>
+      </div>
+      <div>
+        <p class="font-semibold text-brand-ink">Headquarters</p>
+        <p class="mt-1 text-brand-muted">548 Market St, Suite 412, San Francisco &amp; Global Remote</p>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
+      <p>© 2026 MASTER CREATION. All rights reserved.</p>
+      <p>Crafted with spatial precision &amp; human + AI art direction.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CASE STUDY MODAL -->
+<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-brand-ink/45 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="bg-white rounded-[32px] max-w-3xl w-full max-h-[92vh] overflow-y-auto border border-brand-border shadow-2xl">
+    <div id="m-visual" class="h-64 sm:h-72 relative overflow-hidden flex items-center justify-center">
+      <div id="m-art" class="w-full h-full flex items-center justify-center transition-all duration-300"></div>
+      <div id="m-wire" class="hidden absolute inset-0 bg-[#0F172A]/90 backdrop-blur-sm flex-col items-center justify-center p-6 text-white font-mono text-xs">
+        <div class="w-full h-full border border-dashed border-brand-sky/60 rounded-2xl p-4 flex flex-col justify-between" style="background-image:radial-gradient(rgba(56,189,248,.25) 1px, transparent 1px);background-size:16px 16px;">
+          <div class="flex justify-between text-brand-sky">
+            <span>VIEWPORT // WIREFRAME_PASS</span>
+            <span id="m-wire-meta">POLY: 1.42M • 60FPS</span>
+          </div>
+          <div id="m-wire-svg" class="my-auto flex items-center justify-center opacity-90"></div>
+          <div class="flex justify-between text-[11px] text-white/70">
+            <span>GRID: SWISS_12_COL</span>
+            <span>SHADER: CAUSTIC_GLASS_V3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+        <div class="inline-flex rounded-full bg-white/90 backdrop-blur-md p-1 border border-white shadow-sm">
+          <button type="button" id="m-view-final" class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary text-white transition-colors">Final Render</button>
+          <button type="button" id="m-view-wire" class="px-3 py-1 rounded-full text-xs font-semibold text-brand-ink hover:text-brand-primary transition-colors">Wireframe / Blueprint</button>
+        </div>
+        <button id="m-close" aria-label="Close case study" class="w-10 h-10 rounded-full bg-white/95 hover:bg-white text-brand-ink text-base shadow-md flex items-center justify-center">✕</button>
+      </div>
+    </div>
+
+    <div class="p-7 sm:p-9">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <span id="m-cat" class="inline-block px-3 py-1 rounded-full bg-[#E8F6FF] text-brand-primary text-xs font-semibold"></span>
+        <span id="m-meta" class="text-xs font-medium text-brand-muted"></span>
+      </div>
+
+      <h3 id="m-title" class="font-display font-bold text-2xl sm:text-3xl text-brand-ink"></h3>
+      <p id="m-desc" class="mt-3 text-[15px] text-[#52606D] leading-relaxed"></p>
+
+      <div id="m-metrics" class="mt-6 grid grid-cols-3 gap-3 p-4 rounded-2xl bg-brand-surface border border-brand-border"></div>
+
+      <div class="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center justify-between gap-4">
+        <div id="m-tags" class="flex flex-wrap gap-2"></div>
+        <button type="button" id="m-cta" class="btn btn-p px-6 py-3 text-xs">Request a similar project →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK TO TOP BUTTON -->
+<button type="button" id="back-top" aria-label="Back to top" class="fixed bottom-6 left-6 z-40 w-11 h-11 rounded-full glass text-brand-ink hover:text-brand-primary hover:border-brand-sky flex items-center justify-center shadow-lg translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+  ↑
+</button>
+
+<!-- AUTH MODAL (LOGIN / REGISTER CONNECTED TO GOOGLE SHEET) -->
+<div id="auth-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-brand-ink/45 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+  <div class="bg-white/95 backdrop-blur-2xl rounded-[32px] max-w-md w-full p-8 border border-brand-border shadow-2xl relative reveal in">
+    <button id="auth-close" aria-label="Close" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-brand-surface hover:bg-brand-soft text-brand-ink text-sm font-sans flex items-center justify-center transition-colors">✕</button>
+    
+    <div class="flex rounded-full bg-brand-surface p-1 mb-8 border border-brand-border" role="tablist">
+      <button type="button" role="tab" id="tab-login" class="flex-1 py-2.5 rounded-full text-xs font-bold transition-all bg-brand-primary text-white shadow-sm">Login</button>
+      <button type="button" role="tab" id="tab-reg" class="flex-1 py-2.5 rounded-full text-xs font-semibold transition-all text-brand-muted hover:text-brand-ink">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form" class="space-y-4" novalidate>
+      <div>
+        <h3 id="auth-title" class="font-display font-bold text-2xl text-brand-ink">Welcome back</h3>
+        <p class="text-xs text-brand-muted mt-1">Enter your credentials to access your MC Studio dashboard.</p>
+      </div>
+      <div>
+        <label for="l-email" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Email address</label>
+        <input id="l-email" type="email" required placeholder="alex@company.com" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+      </div>
+      <div>
+        <div class="flex items-center justify-between mb-1.5 ml-1">
+          <label for="l-pass" class="block text-xs font-semibold text-brand-ink">Password</label>
+          <button type="button" id="forgot-link" class="text-xs font-semibold text-brand-primary hover:underline">Forgot password?</button>
+        </div>
+        <input id="l-pass" type="password" required placeholder="••••••••" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+      </div>
+      <p id="l-error" class="hidden text-xs text-red-600 font-medium text-center" role="alert"></p>
+      <button type="submit" class="btn btn-p w-full py-3.5 text-sm mt-2">Sign in →</button>
+    </form>
+
+    <!-- Register Form -->
+    <form id="reg-form" class="space-y-4 hidden" novalidate>
+      <div>
+        <h3 class="font-display font-bold text-2xl text-brand-ink">Create account</h3>
+        <p class="text-xs text-brand-muted mt-1">Join MASTER CREATION to collaborate on immersive creative projects.</p>
+      </div>
+      <div>
+        <label for="r-name" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Full name</label>
+        <input id="r-name" required placeholder="Alex Rivera" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+      </div>
+      <div>
+        <label for="r-email" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Work email</label>
+        <input id="r-email" type="email" required placeholder="alex@company.com" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+      </div>
+      <div>
+        <label for="r-pass" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Password (6+ chars)</label>
+        <input id="r-pass" type="password" required placeholder="••••••••" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+      </div>
+      <p id="r-error" class="hidden text-xs text-red-600 font-medium text-center" role="alert"></p>
+      <button type="submit" class="btn btn-p w-full py-3.5 text-sm mt-2">Create account →</button>
+    </form>
+
+    <!-- Forgot Password Form -->
+    <form id="forgot-form" class="space-y-4 hidden" novalidate>
+      <div>
+        <h3 class="font-display font-bold text-2xl text-brand-ink">Reset password</h3>
+        <p id="f-sub" class="text-xs text-brand-muted mt-1">Enter your account email and we’ll send you a 6-digit code.</p>
+      </div>
+      <div id="f-step1" class="space-y-4">
+        <div>
+          <label for="f-email" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Email address</label>
+          <input id="f-email" type="email" required placeholder="alex@company.com" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+        </div>
+      </div>
+      <div id="f-step2" class="space-y-4 hidden">
+        <div>
+          <label for="f-code" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">6-digit code</label>
+          <input id="f-code" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="123456" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+        </div>
+        <div>
+          <label for="f-pass" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">New password (6+ chars)</label>
+          <input id="f-pass" type="password" placeholder="••••••••" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+        </div>
+        <div>
+          <label for="f-pass2" class="block text-xs font-semibold mb-1.5 ml-1 text-brand-ink">Confirm new password</label>
+          <input id="f-pass2" type="password" placeholder="••••••••" class="w-full px-4 py-3 rounded-2xl bg-white border border-brand-border text-sm focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-sky/15" />
+        </div>
+      </div>
+      <p id="f-error" class="hidden text-xs text-red-600 font-medium text-center" role="alert"></p>
+      <button type="submit" id="f-submit" class="btn btn-p w-full py-3.5 text-sm mt-2">Send code →</button>
+      <button type="button" id="f-back" class="w-full text-xs font-semibold text-brand-muted hover:text-brand-ink">← Back to login</button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast" class="fixed bottom-6 right-6 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300" role="status">
+  <div class="glass px-5 py-3 rounded-full flex items-center gap-2.5 shadow-xl">
+    <span class="w-2 h-2 rounded-full bg-brand-primary"></span>
+    <span id="toast-text" class="text-sm font-semibold text-brand-ink"></span>
+  </div>
+</div>
+
+<script>
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    e.target.classList.add('in');
+    io.unobserve(e.target);
+  }
+}), { threshold: 0.1 });
+const reveal = () => $$('.reveal:not(.in)').forEach(el => io.observe(el));
+
+/* Scroll Progress & Back to Top */
+window.addEventListener('scroll', () => {
+  const st = window.scrollY;
+  const dh = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = (st / dh) * 100;
+  $('#scroll-progress').style.width = pct + '%';
+
+  const nb = $('#navbar');
+  const on = st > 20;
+  nb.classList.toggle('border-brand-border', on);
+  nb.classList.toggle('border-transparent', !on);
+  nb.classList.toggle('shadow-[0_4px_24px_rgba(7,137,232,.06)]', on);
+
+  const bt = $('#back-top');
+  const showTop = st > 500;
+  bt.classList.toggle('translate-y-20', !showTop);
+  bt.classList.toggle('opacity-0', !showTop);
+  bt.classList.toggle('pointer-events-none', !showTop);
+}, { passive: true });
+
+$('#back-top').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+/* Navigation Setup */
+const nav = [
+  ['home', 'Home'],
+  ['services', 'Services'],
+  ['portfolio', 'Portfolio'],
+  ['about', 'About'],
+  ['contact', 'Contact']
+];
+$('#nav-desktop').innerHTML = nav.map(([id, t]) => `<a href="#${id}" data-spy="${id}" class="hover:text-brand-ink transition-colors">${t}</a>`).join('');
+$('#nav-mobile').innerHTML = nav.map(([id, t]) => `<a href="#${id}" class="py-2 hover:text-brand-primary">${t}</a>`).join('') + `
+  <div class="pt-3 border-t border-brand-border flex gap-2">
+    <button type="button" id="mob-login-btn" class="btn btn-g flex-1 py-2.5 text-xs">Login</button>
+    <button type="button" id="mob-reg-btn" class="btn btn-p flex-1 py-2.5 text-xs">Register</button>
+  </div>
+`;
+$('#nav-footer').innerHTML = nav.map(([id, t]) => `<a href="#${id}" class="hover:text-brand-primary transition-colors">${t}</a>`).join('');
+
+const mm = $('#nav-mobile'), mb = $('#menu-btn');
+function setMenu(open) {
+  mm.classList.toggle('hidden', !open);
+  mm.classList.toggle('flex', open);
+  mb.setAttribute('aria-expanded', open);
+  $('#menu-path').setAttribute('d', open ? 'M6 18L18 6M6 6l12 12' : 'M4 7h16M4 12h16M4 17h16');
+}
+mb.onclick = () => setMenu(mm.classList.contains('hidden'));
+$$('a', mm).forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+const links = $$('[data-spy]');
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  links.forEach(l => {
+    const on = l.dataset.spy === e.target.id;
+    l.classList.toggle('text-brand-ink', on);
+    l.classList.toggle('font-semibold', on);
+  });
+}), { rootMargin: '-45% 0px -50% 0px' });
+nav.forEach(([id]) => {
+  const el = $('#' + id);
+  if (el) spy.observe(el);
+});
+
+/* Hero Caustic Particles Canvas */
+const canvas = $('#hero-canvas');
+const ctx = canvas.getContext('2d');
+let cw = canvas.width = canvas.offsetWidth;
+let ch = canvas.height = canvas.offsetHeight;
+window.addEventListener('resize', () => {
+  cw = canvas.width = canvas.offsetWidth;
+  ch = canvas.height = canvas.offsetHeight;
+});
+const particles = Array.from({ length: 28 }, () => ({
+  x: Math.random() * cw,
+  y: Math.random() * ch,
+  r: Math.random() * 2.5 + 1,
+  vx: (Math.random() - 0.5) * 0.4,
+  vy: (Math.random() - 0.5) * 0.4,
+  alpha: Math.random() * 0.5 + 0.2
+}));
+function drawParticles() {
+  ctx.clearRect(0, 0, cw, ch);
+  ctx.fillStyle = 'rgba(7, 137, 232, 0.35)';
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = cw; if (p.x > cw) p.x = 0;
+    if (p.y < 0) p.y = ch; if (p.y > ch) p.y = 0;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.globalAlpha = p.alpha;
+    ctx.fill();
+  });
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+/* Hero Studio Modes & Telemetry */
+const modes = {
+  '3d':     { label: '✦ 3D visuals', icon: '3D', t: 'Caustic glass refraction', d: 'Subsurface scattering • Real-time render', bg: '#168FF0,#45B6FE 55%,#D9F0FF', r1: 'rotate(12deg)', r2: 'rotate(-45deg)', s1l: '3D resolution', s1v: '8K', s1u: 'RAW', s1s: 'Raytraced caustics', s2l: 'Motion engine', s2v: '120', s2u: 'FPS', s2s: 'Fluid bezier curve' },
+  'motion': { label: '◈ Motion', icon: '120', t: 'Kinetic bezier rhythm', d: 'Spring physics • 120 fps timeline', bg: '#0789E8,#38BDF8 55%,#BAE3FF', r1: 'rotate(45deg) scale(1.08)', r2: 'rotate(12deg) scale(.95)', s1l: 'Timeline', s1v: '120', s1u: 'FPS', s1s: 'Zero frame drop', s2l: 'Spring physics', s2v: '1.0', s2u: 'DAMP', s2s: 'Harmonic dampening' },
+  'uiux':   { label: '❖ Spatial UI', icon: 'UI', t: 'Spatial glass architecture', d: 'Adaptive translucency • HIG precision', bg: '#1D9BF0,#60C5FF 55%,#E0F4FF', r1: 'rotate(-12deg) scale(.95)', r2: 'rotate(45deg) scale(1.05)', s1l: 'Contrast ratio', s1v: '14:1', s1u: 'AAA', s1s: 'WCAG 2.2 compliant', s2l: 'Design tokens', s2v: '240+', s2u: 'VARS', s2s: 'Auto-layout synced' },
+  'ai':     { label: '✧ AI gen', icon: 'AI', t: 'Neural concept synthesis', d: 'Generative concepts • 8K upscaled', bg: '#0284C7,#38BDF8 55%,#D9F0FF', r1: 'rotate(90deg) scale(1.05)', r2: 'rotate(-90deg) scale(1.1)', s1l: 'Synthesis speed', s1v: '0.4s', s1u: 'SEC', s1s: 'Multi-stage latent diffusion', s2l: 'Resolution', s2v: '32K', s2u: 'MAX', s2s: 'Lossless neural upscaling' }
+};
+const onBtn = 'px-3.5 py-1.5 rounded-full text-[11px] font-semibold bg-white text-brand-primary shadow-sm transition-all';
+const offBtn = 'px-3.5 py-1.5 rounded-full text-[11px] font-medium bg-white/25 text-white hover:bg-white/40 transition-all';
+$('#modes').innerHTML = Object.entries(modes).map(([k, m]) => `<button type="button" role="tab" data-mode="${k}" class="${offBtn}">${m.label}</button>`).join('');
+
+let currentModeKey = '3d';
+let isWireframeActive = false;
+
+function setMode(k) {
+  currentModeKey = k;
+  const m = modes[k];
+  $$('#modes button').forEach(b => {
+    const a = b.dataset.mode === k;
+    b.className = a ? onBtn : offBtn;
+    b.setAttribute('aria-selected', a);
+  });
+  $('#orb-icon').textContent = m.icon;
+  $('#mode-title').textContent = m.t;
+  $('#mode-desc').textContent = m.d;
+  if (!isWireframeActive) {
+    $('#screen').style.background = `linear-gradient(${m.bg})`;
+  }
+  $('#ring1').style.transform = m.r1;
+  $('#ring2').style.transform = m.r2;
+
+  $('#stat1-label').textContent = m.s1l;
+  $('#stat1-val').textContent = m.s1v;
+  $('#stat1-unit').textContent = m.s1u;
+  $('#stat1-sub').textContent = m.s1s;
+
+  $('#stat2-label').textContent = m.s2l;
+  $('#stat2-val').textContent = m.s2v;
+  $('#stat2-unit').textContent = m.s2u;
+  $('#stat2-sub').textContent = m.s2s;
+}
+
+$('#modes').onclick = e => {
+  const b = e.target.closest('button');
+  if (b) setMode(b.dataset.mode);
+};
+
+function toggleWireframe() {
+  isWireframeActive = !isWireframeActive;
+  const orb = $('#orb-btn');
+  const tog = $('#wireframe-toggle');
+  orb.classList.toggle('wireframe', isWireframeActive);
+  tog.textContent = isWireframeActive ? 'Mesh: Wireframe' : 'Mesh: Solid';
+  tog.className = isWireframeActive
+    ? 'px-2.5 py-0.5 rounded-full bg-brand-primary text-white text-[10px] font-semibold backdrop-blur-md border border-white/50 transition-colors'
+    : 'px-2.5 py-0.5 rounded-full bg-white/20 hover:bg-white/35 text-[10px] font-semibold backdrop-blur-md border border-white/30 transition-colors';
+
+  if (isWireframeActive) {
+    $('#screen').style.background = '#0F172A';
+  } else {
+    setMode(currentModeKey);
+  }
+}
+
+$('#wireframe-toggle').onclick = toggleWireframe;
+$('#orb-btn').onclick = toggleWireframe;
+setMode('3d');
+
+/* Partner Marquee */
+const partners = ['AETHER LABS', 'LUMINA OS', 'KINETIX DYNAMICS', 'SOLSTICE AI', 'NEBULA HQ', 'VORTEX STUDIO', 'PULSE GEAR', 'SYMMETRY CO'];
+const marqueeHTML = partners.map(p => `<span class="text-sm sm:text-base font-display font-bold tracking-wider text-brand-muted/70 hover:text-brand-primary transition-colors cursor-default">${p}</span>`).join('');
+$('#partner-marquee').innerHTML = marqueeHTML + marqueeHTML;
+
+/* Services */
+const services = [
+  ['Graphic design', 'Brand identity, logos, social media design and visual communication built for lasting recognition.', 'Brand systems & print', '✎', 'Graphic design'],
+  ['Motion graphics', '2D animation, kinetic typography, explainer videos and visual storytelling with a silky rhythm.', 'Kinetic & brand motion', '▶', 'Motion graphics'],
+  ['3D visualization', '3D modeling, product visualization, rendering and cinematic visuals with photorealistic lighting.', 'Product & spatial CGI', '◆', '3D visualization'],
+  ['UI/UX design', 'Websites, mobile app interfaces, wireframes and interactive prototypes with human-centric clarity.', 'Web, iOS & design systems', '▣', 'UI/UX design'],
+  ['AI-assisted creative', 'Generative visuals and AI-assisted workflows that speed up concepting and production, always under human art direction.', 'Concepts & rapid prototyping', '✦', 'AI-assisted creative'],
+  ['Video editing', 'Professional editing, cinematic storytelling, color grading and video production for modern brands.', 'Commercials & brand films', '▤', 'Video editing']
+];
+$('#services-grid').innerHTML = services.map(([t, d, f, i, cat]) => `
+  <article class="glass lift rounded-[28px] p-8 flex flex-col justify-between reveal">
+    <div>
+      <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F0F9FF] to-brand-soft border border-[#BAE3FF]/70 flex items-center justify-center text-brand-primary text-xl mb-7" aria-hidden="true">${i}</span>
+      <h3 class="font-display font-bold text-xl mb-3 text-brand-ink">${t}</h3>
+      <p class="text-brand-muted text-[15px] leading-relaxed">${d}</p>
+    </div>
+    <div class="mt-7 pt-5 border-t border-brand-border/80 flex items-center justify-between gap-2">
+      <span class="text-xs font-semibold text-brand-primary">${f}</span>
+      <button type="button" class="select-service-btn px-3 py-1 rounded-full bg-brand-surface hover:bg-brand-soft text-[11px] font-semibold text-brand-ink border border-brand-border transition-colors" data-service="${cat}">
+        Select for brief →
+      </button>
+    </div>
+  </article>`).join('');
+
+$$('.select-service-btn').forEach(btn => {
+  btn.onclick = () => {
+    const sName = btn.dataset.service;
+    $$('.chip').forEach(c => {
+      if (c.textContent.trim() === sName) {
+        c.setAttribute('aria-pressed', 'true');
+      }
+    });
+    toast(`Selected "${sName}" for your project brief`);
+    const contactSec = $('#contact');
+    if (contactSec) contactSec.scrollIntoView({ behavior: 'smooth' });
+  };
+});
+
+/* Portfolio */
+const projects = [
+  { t: 'Aether Spatial OS', c: 'UI/UX Design', s: 'Spatial productivity interface & design system', d: 'A complete spatial interface system with translucent glass layers, adaptive ambient lighting and fluid micro-interactions for desktop and AR headsets.', tags: ['Design system', 'Spatial UI', 'Figma'], g: '#E0F4FF,#7DD3FC,#168FF0', m: 'UI', metrics: ['+185% Engagement', '4.9/5 Usability', '120 FPS UI'] },
+  { t: 'Lumina Acoustic Pods', c: '3D Visuals', s: 'Photorealistic glass & aluminum product CGI', d: 'End-to-end 3D modeling, caustic glass shader development and studio lighting direction for a wireless audio launch campaign.', tags: ['Octane render', 'Product CGI', '8K'], g: '#F0F9FF,#BAE3FF,#38BDF8', m: '3D', metrics: ['8K RAW Render', 'Zero Post', '12M+ Impressions'] },
+  { t: 'Kinetix Brand Identity', c: 'Branding & Identity', s: 'Visual identity & modular typography for clean-tech', d: 'Brand architecture, geometric symbol design, stationery and digital guidelines built around precision and electric blue energy.', tags: ['Logo mark', 'Brand book', 'Typography'], g: '#0789E8,#168FF0,#38BDF8', m: 'K', metrics: ['100% Brand Recall', 'Global Rebrand', 'Tier-1 Feature'] },
+  { t: 'FlowState Launch Film', c: 'Motion Graphics', s: 'Kinetic typography & liquid 3D motion', d: 'A 60-second product reveal combining camera choreography, fluid glass ribbons and sound-driven typography.', tags: ['After Effects', 'Cinema 4D', '120 FPS'], g: '#D9F0FF,#93D9FF,#0789E8', m: '▶', metrics: ['60s Master Film', '120 FPS Motion', 'Custom Score'] },
+  { t: 'Solstice Editorial Series', c: 'Graphic Design', s: 'Minimalist art direction, posters & lookbook', d: 'Swiss-inspired grid compositions with soft atmospheric gradients for an international architecture exhibition.', tags: ['Editorial', 'Art direction', 'Print'], g: '#F5FAFF,#D9F0FF,#7DD3FC', m: 'Aa', metrics: ['12-Col Swiss Grid', 'Exhibition Run', 'Curated Book'] },
+  { t: 'Nebula Glass Genesis', c: 'AI Creations', s: 'AI-assisted concepts & surreal crystal worlds', d: 'A visual anthology made with multi-stage AI workflows, then upscaled and refined into campaign key visuals.', tags: ['AI art', 'Generative', 'Key visual'], g: '#38BDF8,#7DD3FC,#E0F4FF', m: '✦', metrics: ['32K Upscale', 'Generative Pipeline', 'Keynote Visuals'] }
+];
+
+const cats = ['All', 'Graphic Design', 'Branding & Identity', 'Motion Graphics', '3D Visuals', 'UI/UX Design', 'AI Creations'];
+$('#filters').innerHTML = cats.map((c, i) => `<button type="button" data-f="${c}" aria-pressed="${i === 0}" class="filter px-4 py-2 rounded-full text-[13px] font-medium bg-brand-surface text-brand-muted border border-brand-border hover:text-brand-ink transition-all whitespace-nowrap">${c}</button>`).join('');
+
+function renderPortfolio(f = 'All') {
+  $('#portfolio-grid').innerHTML = projects.map((p, i) => ({ p, i })).filter(({ p }) => f === 'All' || p.c === f).map(({ p, i }) => `
+    <article>
+      <button type="button" data-open="${i}" class="group glass lift rounded-[28px] p-4 w-full text-left">
+        <div class="h-64 rounded-[22px] relative overflow-hidden flex items-center justify-center text-white font-display font-extrabold text-6xl" style="background:linear-gradient(135deg,${p.g})">
+          <span class="transition-transform duration-500 group-hover:scale-110 drop-shadow-lg">${p.m}</span>
+          <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 text-[11px] font-semibold text-brand-ink font-sans">${p.c}</span>
+        </div>
+        <div class="px-2 pt-5 pb-2">
+          <div class="flex items-center justify-between gap-2">
+            <h3 class="font-display font-bold text-xl text-brand-ink group-hover:text-brand-primary transition-colors">${p.t}</h3>
+            <span class="w-8 h-8 rounded-full bg-brand-surface group-hover:bg-brand-primary group-hover:text-white flex items-center justify-center text-xs transition-colors" aria-hidden="true">↗</span>
+          </div>
+          <p class="mt-1.5 text-sm text-brand-muted">${p.s}</p>
+        </div>
+      </button>
+    </article>`).join('');
+}
+renderPortfolio();
+
+$('#filters').onclick = e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  $$('#filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  renderPortfolio(b.dataset.f);
+};
+
+/* Case Study Modal */
+const modal = $('#modal');
+let lastFocus;
+let activeModalProject = null;
+
+function openModal(i) {
+  const p = projects[i];
+  activeModalProject = p;
+  lastFocus = document.activeElement;
+
+  $('#m-visual').style.background = `linear-gradient(135deg,${p.g})`;
+  $('#m-art').innerHTML = `<span class="font-display font-extrabold text-7xl text-white drop-shadow-xl">${p.m}</span>`;
+  $('#m-wire-svg').innerHTML = `<span class="font-display font-bold text-4xl text-brand-sky">${p.m} [WIRE]</span>`;
+
+  $('#m-cat').textContent = p.c;
+  $('#m-title').textContent = p.t;
+  $('#m-desc').textContent = p.d;
+  $('#m-meta').textContent = p.s;
+  $('#m-tags').innerHTML = p.tags.map(t => `<span class="px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-xs font-medium text-[#52606D]">${t}</span>`).join('');
+  $('#m-metrics').innerHTML = p.metrics.map(m => `
+    <div class="bg-white/80 p-3 rounded-xl border border-brand-border text-center">
+      <p class="font-display font-bold text-brand-primary text-sm sm:text-base">${m.split(' ')[0]}</p>
+      <p class="text-[10px] text-brand-muted mt-0.5">${m.split(' ').slice(1).join(' ')}</p>
+    </div>`).join('');
+
+  setModalWireframe(false);
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+  $('#m-close').focus();
+}
+
+function setModalWireframe(showWire) {
+  const wireEl = $('#m-wire');
+  const artEl = $('#m-art');
+  const btnFinal = $('#m-view-final');
+  const btnWire = $('#m-view-wire');
+
+  wireEl.classList.toggle('hidden', !showWire);
+  wireEl.classList.toggle('flex', showWire);
+  artEl.classList.toggle('hidden', showWire);
+
+  btnFinal.className = !showWire
+    ? 'px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary text-white transition-colors'
+    : 'px-3 py-1 rounded-full text-xs font-semibold text-brand-ink hover:text-brand-primary transition-colors';
+  btnWire.className = showWire
+    ? 'px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary text-white transition-colors'
+    : 'px-3 py-1 rounded-full text-xs font-semibold text-brand-ink hover:text-brand-primary transition-colors';
+}
+
+$('#m-view-final').onclick = () => setModalWireframe(false);
+$('#m-view-wire').onclick = () => setModalWireframe(true);
+
+function closeModal() {
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  document.body.style.overflow = '';
+  if (lastFocus) lastFocus.focus();
+}
+
+$('#portfolio-grid').onclick = e => {
+  const b = e.target.closest('[data-open]');
+  if (b) openModal(+b.dataset.open);
+};
+$('#m-close').onclick = closeModal;
+$('#m-cta').onclick = () => {
+  closeModal();
+  const contactSec = $('#contact');
+  if (contactSec) contactSec.scrollIntoView({ behavior: 'smooth' });
+  if (activeModalProject) {
+    toast(`Pre-filled brief for: ${activeModalProject.t}`);
+  }
+};
+modal.onclick = e => { if (e.target === modal) closeModal(); };
+
+/* Animated Counters */
+let animatedCounters = false;
+const statsSection = $('#stats-row');
+const counterObserver = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (e.isIntersecting && !animatedCounters) {
+      animatedCounters = true;
+      $$('.counter').forEach(c => {
+        const target = +c.dataset.target;
+        const suffix = c.dataset.suffix || '';
+        let current = 0;
+        const step = Math.max(1, Math.floor(target / 35));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          c.textContent = current + suffix;
+        }, 30);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+if (statsSection) counterObserver.observe(statsSection);
+
+/* Process Timeline */
+const steps = [
+  ['Discover', 'Deep dive into your brand vision, audience and visual goals.', '⌕'],
+  ['Concept', 'Moodboards, art direction, storyboards and AI-assisted exploration.', '☀'],
+  ['Design', 'High-precision layouts, 3D geometry, typography and systems.', '▦'],
+  ['Create', 'Bringing assets to life through animation, rendering and motion.', '✦'],
+  ['Deliver', 'Production-ready files, source kits and launch support.', '✓']
+];
+$('#process-grid').innerHTML = steps.map(([t, d, i], n) => `
+  <li class="glass lift rounded-[26px] p-6 text-center reveal relative z-10">
+    <span class="w-12 h-12 mx-auto rounded-2xl ${n === 4 ? 'bg-gradient-to-br from-brand-sky to-brand-primary text-white' : 'bg-[#E8F6FF] text-brand-primary'} flex items-center justify-center mb-4 text-lg" aria-hidden="true">${i}</span>
+    <p class="text-[11px] font-bold text-brand-primary">Step 0${n + 1}</p>
+    <h3 class="font-display font-bold text-lg mt-1 text-brand-ink">${t}</h3>
+    <p class="mt-2 text-xs text-brand-muted leading-relaxed">${d}</p>
+  </li>`).join('');
+
+/* Testimonials */
+const testimonials = [
+  ['“MASTER CREATION transformed our spatial OS interface into a breathtaking visual masterpiece. Their attention to caustic glass lighting and micro-interactions set a new industry benchmark.”', 'Elena Rostova', 'VP of Product, Aether Labs'],
+  ['“The 3D product visualizations delivered for our wireless audio launch generated over 12 million impressions. Absolute world-class craftsmanship and speed.”', 'Marcus Vance', 'Founder, Lumina Acoustics'],
+  ['“Pairing Swiss design discipline with generative AI workflows allowed us to iterate brand concepts 5x faster without sacrificing a shred of elegance.”', 'Siddharth Nair', 'Chief Creative Officer, Kinetix']
+];
+$('#testimonials-grid').innerHTML = testimonials.map(([q, name, role]) => `
+  <article class="glass lift rounded-[28px] p-8 flex flex-col justify-between reveal">
+    <p class="text-[15px] text-[#52606D] leading-relaxed italic">${q}</p>
+    <div class="mt-6 pt-5 border-t border-brand-border/80 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-sky to-brand-primary text-white font-display font-bold text-sm flex items-center justify-center shadow-md">
+        ${name.charAt(0)}
+      </div>
+      <div>
+        <p class="font-display font-bold text-sm text-brand-ink">${name}</p>
+        <p class="text-xs text-brand-muted">${role}</p>
+      </div>
+    </div>
+  </article>`).join('');
+
+/* FAQ Accordion */
+const faqs = [
+  ['What is your typical project timeline?', 'Most branding and visual identity projects take 3 to 5 weeks. Comprehensive 3D visualization and UI/UX design systems typically range from 4 to 8 weeks depending on scope.'],
+  ['How does the human + AI creative workflow work?', 'We leverage state-of-the-art generative AI and custom latent pipelines for rapid concepting and texture synthesis, while all art direction, geometry refinement, vector curation and polish are meticulously executed by our senior human designers.'],
+  ['What deliverables do we receive upon completion?', 'You receive full ownership of all source files (Figma, Cinema 4D, Blender, After Effects vector kits), high-res 8K renders, brand guidelines, and design token exports ready for production.'],
+  ['Do you work with international clients and remote teams?', 'Yes! We collaborate globally across US, European and Asian time zones with asynchronous check-ins and live interactive design review sessions.']
+];
+$('#faq-list').innerHTML = faqs.map(([q, a], idx) => `
+  <div class="glass rounded-2xl border border-brand-border overflow-hidden transition-all">
+    <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between gap-4 font-display font-bold text-base text-brand-ink hover:text-brand-primary transition-colors" aria-expanded="false" data-faq="${idx}">
+      <span>${q}</span>
+      <span class="faq-icon w-7 h-7 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center text-xs text-brand-primary shrink-0 transition-transform">+</span>
+    </button>
+    <div class="faq-content hidden px-5 pb-5 text-sm text-[#52606D] leading-relaxed border-t border-brand-border/40 pt-3">
+      ${a}
+    </div>
+  </div>`).join('');
+
+$$('.faq-btn').forEach(btn => {
+  btn.onclick = () => {
+    const idx = btn.dataset.faq;
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+
+    $$('.faq-content').forEach(c => c.classList.add('hidden'));
+    $$('.faq-btn').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.querySelector('.faq-icon').textContent = '+';
+      b.querySelector('.faq-icon').style.transform = 'none';
+    });
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+      icon.textContent = '−';
+      icon.style.transform = 'rotate(180deg)';
+    }
+  };
+});
+
+/* Contact Brief Builder Chips */
+const serviceOptions = ['Graphic design', 'Motion graphics', '3D visualization', 'UI/UX design', 'AI-assisted creative', 'Video editing'];
+const budgetOptions = ['$5k - $10k', '$10k - $25k', '$25k - $50k', '$50k+'];
+const timelineOptions = ['2 - 4 weeks', '1 - 2 months', '2 - 4 months', 'Flexible'];
+
+$('#chips').innerHTML = serviceOptions.map(s => `<button type="button" aria-pressed="false" class="chip pill-select px-3.5 py-2 rounded-full text-xs font-medium bg-white border border-brand-border text-[#52606D] hover:border-brand-sky transition-all">${s}</button>`).join('');
+$('#budget-chips').innerHTML = budgetOptions.map((b, i) => `<button type="button" aria-pressed="${i===1}" class="budget-chip pill-select px-3.5 py-2 rounded-full text-xs font-medium bg-white border border-brand-border text-[#52606D] hover:border-brand-sky transition-all">${b}</button>`).join('');
+$('#timeline-chips').innerHTML = timelineOptions.map((t, i) => `<button type="button" aria-pressed="${i===0}" class="timeline-chip pill-select px-3.5 py-2 rounded-full text-xs font-medium bg-white border border-brand-border text-[#52606D] hover:border-brand-sky transition-all">${t}</button>`).join('');
+
+$('#chips').onclick = e => { const c = e.target.closest('.chip'); if (c) c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true'); };
+$('#budget-chips').onclick = e => { const c = e.target.closest('.budget-chip'); if (c) { $$('.budget-chip').forEach(x => x.setAttribute('aria-pressed', x === c)); } };
+$('#timeline-chips').onclick = e => { const c = e.target.closest('.timeline-chip'); if (c) { $$('.timeline-chip').forEach(x => x.setAttribute('aria-pressed', x === c)); } };
+
+/* Toast Helper */
+let toastT;
+function toast(m) {
+  $('#toast-text').textContent = m;
+  const t = $('#toast');
+  t.classList.remove('translate-y-20', 'opacity-0');
+  clearTimeout(toastT);
+  toastT = setTimeout(() => t.classList.add('translate-y-20', 'opacity-0'), 2600);
+}
+
+/* Copy Email */
+$('#copy-email').onclick = () => {
+  const emailStr = 'hello@mastercreation.studio';
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(emailStr).then(() => toast('Email copied to clipboard')).catch(() => fallbackCopy(emailStr));
+  } else {
+    fallbackCopy(emailStr);
+  }
+};
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    toast('Email copied to clipboard');
+  } catch (err) {
+    toast('Could not copy email');
+  }
+  document.body.removeChild(ta);
+}
+
+/* Contact Form Submission */
+$('#contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const err = $('#form-error'), ok = $('#form-ok');
+  const name = $('#cn').value.trim();
+  const email = $('#ce').value.trim();
+  const msg = $('#cm').value.trim();
+  const problem = !name ? 'Please enter your name.' : !/^\S+@\S+\.\S+$/.test(email) ? 'Please enter a valid work email address.' : !msg ? 'Please provide a few project details.' : '';
+  err.textContent = problem;
+  err.classList.toggle('hidden', !problem);
+  if (problem) return;
+
+  ok.classList.remove('hidden');
+  toast('Project brief successfully submitted');
+  e.target.reset();
+  $$('.chip').forEach(c => c.setAttribute('aria-pressed', 'false'));
+  setTimeout(() => ok.classList.add('hidden'), 7000);
+});
+
+/* AUTH MODAL & GOOGLE SHEET API INTEGRATION */
+// REPLACE THIS STRING WITH YOUR DEPLOYED GOOGLE APPS SCRIPT WEB APP URL
+const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbw_0iU85XOKyyyx-M9YhonkpiDQYkZ3SBE2AIlTBWxffKook_fo3BKJEXfUUoo6Ct7GvQ/exec";
+
+const authModal = $('#auth-modal');
+const tabLogin = $('#tab-login');
+const tabReg = $('#tab-reg');
+const formLogin = $('#login-form');
+const formReg = $('#reg-form');
+const formForgot = $('#forgot-form');
+
+function openAuth(mode = 'login') {
+  authModal.classList.remove('hidden');
+  authModal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+  switchAuthTab(mode);
+}
+
+function closeAuth() {
+  authModal.classList.add('hidden');
+  authModal.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+function switchAuthTab(mode) {
+  const isLogin = mode === 'login';
+  tabLogin.className = isLogin 
+    ? 'flex-1 py-2.5 rounded-full text-xs font-bold transition-all bg-brand-primary text-white shadow-sm' 
+    : 'flex-1 py-2.5 rounded-full text-xs font-semibold transition-all text-brand-muted hover:text-brand-ink';
+  tabReg.className = !isLogin 
+    ? 'flex-1 py-2.5 rounded-full text-xs font-bold transition-all bg-brand-primary text-white shadow-sm' 
+    : 'flex-1 py-2.5 rounded-full text-xs font-semibold transition-all text-brand-muted hover:text-brand-ink';
+  
+  formLogin.classList.toggle('hidden', !isLogin);
+  formReg.classList.toggle('hidden', isLogin);
+  formForgot.classList.add('hidden');
+}
+
+tabLogin.onclick = () => switchAuthTab('login');
+tabReg.onclick = () => switchAuthTab('register');
+$('#auth-close').onclick = closeAuth;
+authModal.onclick = e => { if (e.target === authModal) closeAuth(); };
+
+$('#nav-login-btn').onclick = () => openAuth('login');
+$('#nav-reg-btn').onclick = () => openAuth('register');
+
+document.body.addEventListener('click', e => {
+  if (e.target && e.target.id === 'mob-login-btn') { setMenu(false); openAuth('login'); }
+  if (e.target && e.target.id === 'mob-reg-btn') { setMenu(false); openAuth('register'); }
+});
+
+/* LOGIN FORM SUBMISSION */
+formLogin.addEventListener('submit', async e => {
+  e.preventDefault();
+  const email = $('#l-email').value.trim();
+  const password = $('#l-pass').value.trim();
+  const errEl = $('#l-error');
+  
+  if (!email || !password) {
+    errEl.textContent = 'Please fill in all fields.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+  
+  errEl.classList.add('hidden');
+  toast('Verifying credentials...');
+
+  if (SHEET_API_URL.includes('YOUR_GOOGLE_APPS_SCRIPT')) {
+    // Fallback simulation mode if Apps Script URL is not yet configured
+    setTimeout(() => {
+      toast('Welcome back, Demo User!');
+      closeAuth();
+      formLogin.reset();
+      $('#nav-login-btn').textContent = 'Alex';
+      $('#nav-reg-btn').textContent = 'Dashboard';
+    }, 1000);
+    return;
+  }
+
+  try {
+    const res = await fetch(SHEET_API_URL, {
+      method: 'POST',
+      body: JSON.stringify({ action: 'login', email, password })
+    });
+    const data = await res.json();
+    
+    if (data.status === 'success') {
+      toast(data.message);
+      closeAuth();
+      formLogin.reset();
+      $('#nav-login-btn').textContent = data.user.name.split(' ')[0];
+      $('#nav-reg-btn').textContent = 'Dashboard';
+      $('#nav-reg-btn').onclick = () => toast(`Welcome to your MC Studio dashboard, ${data.user.name}!`);
+    } else {
+      errEl.textContent = data.message;
+      errEl.classList.remove('hidden');
+    }
+  } catch (err) {
+    errEl.textContent = 'Connection error. Please check your script URL.';
+    errEl.classList.remove('hidden');
+  }
+});
+
+/* REGISTER FORM SUBMISSION */
+formReg.addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = $('#r-name').value.trim();
+  const email = $('#r-email').value.trim();
+  const password = $('#r-pass').value.trim();
+  const errEl = $('#r-error');
+  
+  if (!name || !email || !password) {
+    errEl.textContent = 'Please complete all fields.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+  if (password.length < 6) {
+    errEl.textContent = 'Password must be at least 6 characters.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+  
+  errEl.classList.add('hidden');
+  toast('Saving account to Google Sheet...');
+
+  if (SHEET_API_URL.includes('YOUR_GOOGLE_APPS_SCRIPT')) {
+    setTimeout(() => {
+      toast('Registration successful! Please log in.');
+      switchAuthTab('login');
+      $('#l-email').value = email;
+      formReg.reset();
+    }, 1000);
+    return;
+  }
+
+  try {
+    const res = await fetch(SHEET_API_URL, {
+      method: 'POST',
+      body: JSON.stringify({ action: 'register', name, email, password })
+    });
+    const data = await res.json();
+    
+    if (data.status === 'success') {
+      toast('Account created! Please log in.');
+      switchAuthTab('login');
+      $('#l-email').value = email;
+      formReg.reset();
+    } else {
+      errEl.textContent = data.message;
+      errEl.classList.remove('hidden');
+    }
+  } catch (err) {
+    errEl.textContent = 'Connection error. Please check your script URL.';
+    errEl.classList.remove('hidden');
+  }
+});
+
+/* FORGOT PASSWORD (email code via Google Apps Script) */
+let forgotStep = 1;
+function showForgot() {
+  switchAuthTab('login');
+  formLogin.classList.add('hidden');
+  formForgot.classList.remove('hidden');
+  forgotStep = 1;
+  $('#f-step1').classList.remove('hidden');
+  $('#f-step2').classList.add('hidden');
+  $('#f-submit').textContent = 'Send code →';
+  $('#f-sub').textContent = 'Enter your account email and we’ll send you a 6-digit code.';
+  $('#f-error').classList.add('hidden');
+  $('#f-email').value = $('#l-email').value.trim();
+}
+$('#forgot-link').onclick = showForgot;
+$('#f-back').onclick = () => switchAuthTab('login');
+
+formForgot.addEventListener('submit', async e => {
+  e.preventDefault();
+  const errEl = $('#f-error');
+  const btn = $('#f-submit');
+  const email = $('#f-email').value.trim();
+  const fail = m => { errEl.textContent = m; errEl.classList.remove('hidden'); };
+  errEl.classList.add('hidden');
+
+  if (!email) return fail('Please enter your email.');
+
+  let payload;
+  if (forgotStep === 1) {
+    payload = { action: 'forgot', email };
+  } else {
+    const code = $('#f-code').value.trim();
+    const pass = $('#f-pass').value.trim();
+    const pass2 = $('#f-pass2').value.trim();
+    if (!/^\d{6}$/.test(code)) return fail('Enter the 6-digit code from your email.');
+    if (pass.length < 6) return fail('Password must be at least 6 characters.');
+    if (pass !== pass2) return fail('Passwords do not match.');
+    payload = { action: 'reset', email, code, password: pass };
+  }
+
+  btn.disabled = true;
+  const label = btn.textContent;
+  btn.textContent = 'Please wait...';
+  try {
+    const res = await fetch(SHEET_API_URL, { method: 'POST', body: JSON.stringify(payload) });
+    const data = await res.json();
+    if (data.status !== 'success') { fail(data.message || 'Something went wrong.'); btn.textContent = label; return; }
+
+    if (forgotStep === 1) {
+      forgotStep = 2;
+      $('#f-step1').classList.add('hidden');
+      $('#f-step2').classList.remove('hidden');
+      $('#f-sub').textContent = 'We sent a code to ' + email + '. It expires in 10 minutes.';
+      btn.textContent = 'Reset password →';
+      toast('Code sent. Check your inbox (and spam).');
+    } else {
+      toast('Password updated! Please log in.');
+      switchAuthTab('login');
+      $('#l-email').value = email;
+      $('#l-pass').value = '';
+      formForgot.reset();
+    }
+  } catch (err) {
+    fail('Connection error. Please check your script URL.');
+    btn.textContent = label;
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+reveal();
+</script>
+</body>
+</html>
